@@ -591,6 +591,10 @@ public class DrawController extends AbstractController {
     @SuppressWarnings("unchecked")
     private void edgeEditor(double weight, Jedis jedis) throws IOException {
         String path = "../resources/~.fxml".replace("~", "edge_editor");
+        String jarExecution = System.getenv().getOrDefault("JAR_EXECUTION", "FALSE");
+        if (Boolean.parseBoolean(jarExecution.toLowerCase())){
+            path = "/resources/~.fxml".replace("~", "edge_editor");
+        }
         String defaultWarningText = "Ensure Vertex are unique and Weight is numeric";
         AnchorPane root = FXMLLoader.load(getClass().getResource(path));
         // default failure set to determine method of window onCloseRequest action
