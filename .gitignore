@@ -1,0 +1,11 @@
+# Basic Project non changing files to ignore after initial push
+.idea
+*.iml
+
+# I don't want to commit compiled code as it wil compile on run anyways
+#*.class
+#out/*
+
+# If these are updating well undo this non-comit
+*.DS_Store
+*.log
