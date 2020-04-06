@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderPaneBG" fx:id="bpBackgroundForAll" minHeight="-Infinity" minWidth="-Infinity" prefHeight="986.0" prefWidth="1432.0" stylesheets="@../stylesheets/Draw.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <left>
+      <AnchorPane prefHeight="774.0" prefWidth="303.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_draw" layoutX="56.0" layoutY="182.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_draw" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Draw">
+                     <graphic>
+                        <ImageView fx:id="img_draw1" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/draw.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_help" layoutX="57.0" layoutY="387.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_help" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Help">
+                     <graphic>
+                        <ImageView fx:id="img_help" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_examples" layoutX="56.0" layoutY="316.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_examples" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Examples">
+                     <graphic>
+                        <ImageView fx:id="img_examples" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/example.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_load" layoutX="57.0" layoutY="246.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_load" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Load">
+                     <graphic>
+                        <ImageView fx:id="img_load" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/upload.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_notes" layoutX="57.0" layoutY="115.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_notes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Notes">
+                     <graphic>
+                        <ImageView fx:id="img_notes" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/notes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_exit" layoutX="57.0" layoutY="530.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_exit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Exit">
+                     <graphic>
+                        <ImageView fx:id="img_exit" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+            <Button fx:id="btn_settings" layoutX="56.0" layoutY="455.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="155.0" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbl_settings" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Settings">
+                     <graphic>
+                        <ImageView fx:id="img_settings" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="774.0" prefWidth="678.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="169.0" fitWidth="423.0" layoutX="144.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/qub_logo.jpg" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="83.0" layoutY="196.0" prefHeight="551.0" prefWidth="544.0" text="Project Name: The Animation of Graph Algorithms&#10;Project ID: PK01&#10;Project Supervisor: Dr Peter Kilpatrick&#10;&#10;Description: &#10;A simple lightweight Java &amp; JavaFX based App&#10;used to visualize the Animation of such Graph based &#10;Algorithms as the Famous Dijkstras' Algorithm.&#10;&#10;What can this App do ?&#10; * Create Vertex &amp; Edge Objects at the click of a button&#10; * Edit, Save and Load Graphs &amp; Adjacency Matrix&#10; * Auto updating Adjacency Matrix &#10; * No Graph Size Limitations&#10; * Visualize Dijkstras' Algorithm &#10; * Manual &amp; Auto Animation Controls&#10;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="895.0" prefWidth="462.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="172.0" fitWidth="143.0" layoutX="46.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/dev.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="30.0" text="Developer  Information">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField layoutX="189.0" layoutY="77.0" prefHeight="38.0" prefWidth="244.0" text="Student Name:  Conor McMullan" />
+            <TextField layoutX="189.0" layoutY="126.0" prefHeight="36.0" prefWidth="245.0" text="Student Age: 23 " />
+            <TextField layoutX="189.0" layoutY="170.0" prefHeight="36.0" prefWidth="245.0" text="Student Number: 40154229" />
+            <TextField layoutX="189.0" layoutY="214.0" prefHeight="36.0" prefWidth="244.0" text="Student Pathway: BEng Computer Science" />
+            <Label layoutX="134.0" layoutY="266.0" text="About Me">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField layoutX="21.0" layoutY="309.0" prefHeight="38.0" prefWidth="154.0" text="Primary Language: Python" />
+            <TextField layoutX="196.0" layoutY="310.0" prefHeight="36.0" prefWidth="245.0" text="Favourite Computer Meme: &quot;This is fine&quot;" />
+            <ImageView fitHeight="83.0" fitWidth="127.0" layoutX="58.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pythonLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="198.0" fitWidth="217.0" layoutX="210.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/favMeme.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="123.0" layoutY="483.0" text="Experience">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField layoutX="51.0" layoutY="581.0" prefHeight="36.0" prefWidth="151.0" text="Rapid 7: 1 Year 7 Months" />
+            <TextField layoutX="234.0" layoutY="581.0" prefHeight="36.0" prefWidth="102.0" text="Kami: 4 Months" />
+            <ImageView fitHeight="31.0" fitWidth="163.0" layoutX="45.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rapid7Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="119.0" layoutX="233.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kamiAiLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="212.0" prefWidth="1432.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="92.0" fitWidth="134.0" layoutX="311.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/gitlabLogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="158.0" layoutX="886.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/linkedInLogo.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="112.0" fitWidth="165.0" layoutX="589.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/githubLogo.jpg" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="835.0" layoutY="120.0" text="https://www.linkedin.com/in/conor-mcmullan" />
+            <Hyperlink layoutX="572.0" layoutY="120.0" text="https://github.com/conor-mcmullan" />
+            <Hyperlink layoutX="209.0" layoutY="120.0" text="https://gitlab2.eeecs.qub.ac.uk/users/40154229/projects" />
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,23 @@
+
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 21px;
+    -fx-text-fill: #000000;
+}
+
+.button:pressed {
+    -fx-border-color: transparent, black;
+}
+
+#vboxContainer{
+    -fx-background-color: #bbe4ff;
+}
+
+#anchorPaneBg{
+    -fx-background-color: #bbe4ff;
+    -fx-border-color: transparent transparent transparent transparent;
+}
+

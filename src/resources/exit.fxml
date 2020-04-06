@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="backgroundAnchorPane" prefHeight="112.0" prefWidth="240.0" styleClass="anchorbg" stylesheets="@../stylesheets/Exit.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ExitController">
+   <children>
+      <Pane prefHeight="112.0" prefWidth="240.0">
+         <children>
+            <Label fx:id="lblExitString" alignment="CENTER" layoutX="30.0" layoutY="27.0" prefHeight="29.0" prefWidth="169.0" text="Please confirm your exit" textAlignment="CENTER" />
+            <Button fx:id="btnConfirmExit" layoutX="48.0" layoutY="69.0" mnemonicParsing="false" onAction="#confirmExit" text="Confirm" />
+            <Button fx:id="btnCancelExit" cancelButton="true" layoutX="130.0" layoutY="69.0" mnemonicParsing="false" onAction="#cancelExit" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

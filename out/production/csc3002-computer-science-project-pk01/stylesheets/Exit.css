@@ -1,0 +1,27 @@
+#anchorbg{
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+#backgroundAnchorPane{
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.anchorPaneEdgeEditor{
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.button{
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em; /* 12 */
+    -fx-text-fill: #000000;
+}
+
+.button:pressed {
+    -fx-border-color: transparent, black;
+}

@@ -1,0 +1,131 @@
+
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-background-color: #bbe4ff;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 21px;
+    -fx-text-fill: #000000;
+}
+
+.button:pressed {
+    -fx-border-color: transparent, black;
+}
+
+#vboxContainer{
+    -fx-background-color: #bbe4ff;
+}
+
+#anchorPaneBg{
+    -fx-background-color: #bbe4ff;
+}
+
+#spBG{
+    -fx-background-color: RED;
+}
+
+#tabDrawPane{
+    -fx-background-color: WHITE;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #bbe4ff;
+}
+
+.leftSide{
+    -fx-font-size: 18px;
+    -fx-background-color: WHITE;
+    -fx-min-height: 10px;
+    -fx-min-width: 30px;
+}
+
+.radioBtns{
+    -fx-background-color: TRANSPARENT;
+}
+
+.tab-header-background{
+    -fx-effect: null;
+}
+
+.tabArea{
+    -fx-background-color: WHITE;
+    -fx-border-color: BLACK;
+    -fx-border-width: 1px;
+}
+
+.tabText{
+    -fx-font-size: 18px;
+    -fx-background-color: lightyellow;
+}
+
+.tab:selected{
+    -fx-background-color: lightgreen;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
+.table-view{
+    -fx-border-color: BLACK;
+    -fx-background-color: WHITE;
+    -fx-border-width: 1px;
+}
+
+.tooltip{
+    -fx-background-color: lightyellow;
+    -fx-border-color: BLACK;
+    -fx-border-width: 1px;
+    -fx-text-fill: BLACK;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+
+
+#txtAreaAdjacencyMatrix{
+    -fx-font-size: 21px;
+}
+
+
+/* VertexCircle */
+
+.default{
+    -fx-stroke: BLACK;
+    -fx-stroke-width: 1px;
+}
+
+.default:hover{
+    -fx-fill: #26fb62;
+}
+
+.selected{
+    -fx-fill: #26fb62;
+}
+
+
+/* FPS Counter ToggleButton */
+.toggle-button{
+    /* -fx-background-color: #bcbcbc; */
+    -fx-background-color: #ff464d;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.toggle-button:selected{
+    -fx-background-color: #89ff98;
+}
+
+.toggle-button:hover{
+    -fx-background-color: lightyellow;
+}
+
+
+.text-area{
+    -fx-font-size: 21px;
+}
+
+#borderPaneBG{
+    -fx-background-color: #bbe4ff;
+}
+

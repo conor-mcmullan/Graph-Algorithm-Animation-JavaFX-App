@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderPaneBG" fx:id="bpBackgroundForAll" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1432.0" stylesheets="@../stylesheets/Draw.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DrawController">
+   <top>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="1432.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="172.0" layoutY="36.0" prefHeight="9.0" prefWidth="987.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="47.0" prefWidth="223.0">
+                     <children>
+                        <Button fx:id="btn_main" alignment="CENTER" layoutX="56.0" layoutY="7.0" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="40.0" prefWidth="137.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl_main" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Menu">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw3" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/menu.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="54.0" prefWidth="223.0">
+                     <children>
+                        <Button fx:id="btn_draw" layoutX="58.0" layoutY="8.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl_draw" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Draw">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/draw.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="54.0" prefWidth="223.0">
+                     <children>
+                        <Button fx:id="btn_load" layoutX="58.0" layoutY="7.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl_load" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Load">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw2" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/upload.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="54.0" prefWidth="223.0">
+                     <children>
+                        <Button fx:id="btn_exit" layoutX="59.0" layoutY="8.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl_exit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Exit">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw21" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/exit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="910.0" prefWidth="191.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="anchorPaneLeft" layoutY="-21.0" prefHeight="801.0" prefWidth="191.0">
+               <children>
+                  <ChoiceBox fx:id="cBoxAlgo" layoutX="4.0" layoutY="161.0" prefHeight="34.0" prefWidth="175.0" value="--Select Algorithm--">
+                     <tooltip>
+                        <Tooltip id="tooltip_selectAlgorithm" text="Select The Graph Algorithm to Run" />
+                     </tooltip>
+                  </ChoiceBox>
+                  <Label fx:id="lblDrawingSceneIs" layoutX="3.0" layoutY="122.0" prefHeight="34.0" prefWidth="175.0" styleClass="leftSide" text="    Select Algorithm" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnRunAlgo" alignment="CENTER" layoutX="24.0" layoutY="507.0" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="137.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="lblRunBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Run">
+                           <graphic>
+                              <ImageView fx:id="imgRunBtn" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/launchPageRocket.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Animation of selected Algorithm above will begin to execute on the Graph tab" />
+                     </tooltip>
+                  </Button>
+                  <ChoiceBox fx:id="cBoxStartingNode" layoutX="4.0" layoutY="250.0" prefHeight="34.0" prefWidth="175.0" value="--Select Algorithm--">
+                     <tooltip>
+                        <Tooltip id="tooltip_selectAlgorithm" text="Select The Graph Algorithm to Run" />
+                     </tooltip>
+                  </ChoiceBox>
+                  <Label fx:id="lblStartingNode" layoutX="3.0" layoutY="211.0" prefHeight="34.0" prefWidth="175.0" styleClass="leftSide" text="    Starting Vertex" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRunAlgorithmText" layoutX="3.0" layoutY="465.0" prefHeight="34.0" prefWidth="175.0" styleClass="leftSide" text="    Run Algorithm" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblStartingNode1" layoutX="4.0" layoutY="562.0" prefHeight="34.0" prefWidth="175.0" styleClass="leftSide" text=" Animation Steps " textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterMax" layoutX="4.0" layoutY="596.0" prefHeight="34.0" prefWidth="56.0" styleClass="leftSide" text="Max:" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterCurrent" layoutX="4.0" layoutY="630.0" prefHeight="34.0" prefWidth="91.0" styleClass="leftSide" text="Current:" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterRemaining" layoutX="4.0" layoutY="664.0" prefHeight="34.0" prefWidth="119.0" styleClass="leftSide" text="Remaining:" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterRemainingValue" layoutX="123.0" layoutY="664.0" prefHeight="34.0" prefWidth="56.0" styleClass="leftSide" text="0" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterMaxValue" layoutX="60.0" layoutY="596.0" prefHeight="34.0" prefWidth="119.0" styleClass="leftSide" text="0" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAnimationCounterCurrentValue" layoutX="94.0" layoutY="630.0" prefHeight="34.0" prefWidth="85.0" styleClass="leftSide" text="0" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblisalgorunnable" layoutX="5.0" layoutY="386.0" prefHeight="65.0" prefWidth="108.0" styleClass="leftSide" text=" Algorithm Runnable" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgRunnable" fitHeight="34.0" fitWidth="48.0" layoutX="135.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/runBad.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblDefaultControls" layoutX="2.0" layoutY="297.0" prefHeight="34.0" prefWidth="175.0" styleClass="leftSide" text="    Default Controls" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="cBoxDefaultControls" layoutX="3.0" layoutY="336.0" prefHeight="34.0" prefWidth="175.0" value="--Select Algorithm--">
+                     <tooltip>
+                        <Tooltip id="tooltip_selectAlgorithm" text="Select The Graph Algorithm to Run" />
+                     </tooltip>
+                  </ChoiceBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="638.0" prefWidth="934.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane id="tabDrawPane" layoutX="26.0" layoutY="18.0" prefHeight="605.0" prefWidth="884.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <tabs>
+                  <Tab id="tabGraph" styleClass="tabText" text="Graph">
+                     <content>
+                        <AnchorPane id="tabGraphArea" fx:id="anchorPaneGraph" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="919.0" styleClass="tabArea">
+                           <children>
+                              <Pane fx:id="gAreaPane" layoutX="4.0" layoutY="6.0" onMouseClicked="#clickedTextArea" prefHeight="591.0" prefWidth="927.0" stylesheets="@../stylesheets/Draw.css" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabAdjacencyMatrix" styleClass="tabText" text="Adjacency Matrix">
+                     <content>
+                        <AnchorPane id="tabMatrixArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1044.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaAdjacencyMatrix" editable="false" layoutX="64.0" layoutY="51.0" prefHeight="496.0" prefWidth="928.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabAlgorithmSteps" styleClass="tabText" text="Algorithm">
+                     <content>
+                        <AnchorPane id="tabAlgorithmArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1044.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaAlgorithmSteps" editable="false" layoutX="36.0" layoutY="25.0" prefHeight="491.0" prefWidth="933.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabTravelMap" styleClass="tabText" text="Algorithm Output">
+                     <content>
+                        <AnchorPane id="tabTravelMapArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1044.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaAlgorithmOutput" editable="false" prefHeight="491.0" prefWidth="933.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabTravelMap" styleClass="tabText" text="Travel Costs (Lv)">
+                     <content>
+                        <AnchorPane id="tabTravelMapArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1044.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaTravelCost" editable="false" prefHeight="491.0" prefWidth="933.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabTravelMap" styleClass="tabText" text="Console">
+                     <content>
+                        <AnchorPane id="tabTravelMapArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1051.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaConsole" editable="false" prefHeight="491.0" prefWidth="933.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab id="tabTravelMap" styleClass="tabText" text="System Info">
+                     <content>
+                        <AnchorPane id="tabTravelMapArea" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="1044.0" styleClass="tabArea">
+                           <children>
+                              <TextArea fx:id="txtAreaSystemInfo" editable="false" prefHeight="491.0" prefWidth="933.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="910.0" prefWidth="122.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="anchorPaneRight" layoutY="72.0" prefHeight="838.0" prefWidth="191.0">
+               <children>
+                  <Label fx:id="lblClearAll" layoutX="4.0" layoutY="402.0" prefHeight="59.0" prefWidth="169.0" styleClass="leftSide" text="  Clear All of Graph" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSaveGraphAdj" layoutX="4.0" layoutY="281.0" prefHeight="59.0" prefWidth="169.0" styleClass="leftSide" text="Save Adjacency Matrix" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSaveGraphAdjMatrix" alignment="CENTER" layoutX="22.0" layoutY="345.0" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#saveGraphAdjacencyMatrix" prefHeight="40.0" prefWidth="137.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="lblSaveAdjMAtrix" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Save">
+                           <graphic>
+                              <ImageView fx:id="imgSaveBtn1" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/saveButtonImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnClearAll" alignment="CENTER" layoutX="22.0" layoutY="467.0" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#clearAllSceneContents" prefHeight="40.0" prefWidth="137.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="lblbtnClearAll" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Clear">
+                           <graphic>
+                              <ImageView fx:id="imgClearAll" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSave" alignment="CENTER" layoutX="17.0" layoutY="224.0" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#saveGraph" prefHeight="40.0" prefWidth="137.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="lblSave" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Save">
+                           <graphic>
+                              <ImageView fx:id="imgSaveBtn" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/saveButtonImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="lblSaveInstructions" layoutX="4.0" layoutY="159.0" prefHeight="59.0" prefWidth="169.0" styleClass="leftSide" text="Save Graph &amp; Animation Step" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSaveInstructions1" layoutX="3.0" layoutY="513.0" prefHeight="59.0" prefWidth="169.0" styleClass="leftSide" text="Graph Altering Options" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="anchorPaneGraphAlteringButtons" layoutX="4.0" layoutY="579.0" prefHeight="124.0" prefWidth="169.0">
+                     <children>
+                        <RadioButton id="radioBtnAdd_Vertex" fx:id="radioBtnAdd_Vertex" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#changeStatusAddVertex" prefHeight="40.0" prefWidth="167.0" text="Add Vertex" wrapText="true">
+                           <styleClass>
+                              <String fx:value="leftSide" />
+                              <String fx:value="radioBtns" />
+                           </styleClass>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="radioGroupDrawActions" />
+                           </toggleGroup>
+                           <tooltip>
+                              <Tooltip id="tooltipAdd_Vertex" fx:id="tooltipAdd_Vertex" text="Enables Click to Create Vertex" />
+                           </tooltip>
+                        </RadioButton>
+                        <RadioButton id="radioBtnAdd_Edge" fx:id="radioBtnAdd_Edge" layoutX="1.0" layoutY="41.0" mnemonicParsing="false" onAction="#changeStatusAddEdge" prefHeight="34.0" prefWidth="167.0" text="Add Edge" toggleGroup="$radioGroupDrawActions" wrapText="true">
+                           <styleClass>
+                              <String fx:value="leftSide" />
+                              <String fx:value="radioBtns" />
+                           </styleClass>
+                           <tooltip>
+                              <Tooltip id="tooltipAdd_Edge" fx:id="tooltipAdd_Edge" text="Enables Ability to Add Edge between Vertex" />
+                           </tooltip>
+                        </RadioButton>
+                        <RadioButton id="radioBtnRemove_Object" fx:id="radioBtnRemove_Object" layoutX="1.0" layoutY="75.0" mnemonicParsing="false" onAction="#changeStatusRemoveObject" prefHeight="40.0" prefWidth="167.0" text="Removing" toggleGroup="$radioGroupDrawActions" wrapText="true">
+                           <styleClass>
+                              <String fx:value="leftSide" />
+                              <String fx:value="radioBtns" />
+                           </styleClass>
+                           <tooltip>
+                              <Tooltip id="tooltipRemove_Object" fx:id="tooltipRemove_Object" text="When Enabled Objects on Click will be removed" />
+                           </tooltip>
+                        </RadioButton>
+                     </children>
+                  </AnchorPane>
+                  <ToggleButton id="toggleFPS" fx:id="toggleFPS" contentDisplay="CENTER" layoutX="74.0" layoutY="108.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="98.0" stylesheets="@../stylesheets/Draw.css" text="Toggle FPS" textAlignment="CENTER" />
+                  <TextField fx:id="txtFieldFPSValue" editable="false" layoutX="2.0" layoutY="108.0" minHeight="34.0" prefHeight="34.0" prefWidth="70.0" text="60.0 fps" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <bottom>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="134.0" prefWidth="1432.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblSaveInstructions11" layoutX="599.0" layoutY="4.0" prefHeight="39.0" prefWidth="225.0" styleClass="leftSide" text="  Animation Controls   " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <HBox fx:id="hBoxAnimationButtonBar" alignment="CENTER" layoutX="334.0" layoutY="47.0" prefHeight="87.0" prefWidth="1432.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+               <children>
+                  <VBox fx:id="vboxMStart" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnAnimationStart" alignment="CENTER" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="119.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="119.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Start">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw3114" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/animationStart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxMPrev" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnAnimationPrev" alignment="CENTER" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="119.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="119.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Prev">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw3113" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/animationPrev.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxMNext" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnAnimationNext" alignment="CENTER" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="119.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="119.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Next">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw3112" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/animationNext.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxMEnd" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="btnAnimationEnd" alignment="CENTER" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="108.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="108.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="End">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw311" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/animationEnd.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxReset" layoutX="367.0" layoutY="10.0" prefHeight="92.0" prefWidth="126.0">
+                     <children>
+                        <Button fx:id="btnAnimationReset" alignment="CENTER" maxHeight="50.0" maxWidth="137.0" minHeight="40.0" minWidth="108.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="108.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl41" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Reset">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw3111" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/btnReset.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxAPlay" prefHeight="92.0" prefWidth="163.0">
+                     <children>
+                        <Button fx:id="btnAnimationAutoPlay" alignment="CENTER" maxHeight="75.0" maxWidth="173.0" minHeight="40.0" minWidth="119.0" mnemonicParsing="false" onAction="#runAlgorithm" prefHeight="40.0" prefWidth="147.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <graphic>
+                              <Label fx:id="lbl_main1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="23.0" prefWidth="101.0" text="Auto Play" wrapText="true">
+                                 <graphic>
+                                    <ImageView fx:id="img_draw31" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/animation_image_buttons/AutoPlay.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxAAnimationSpeed" prefHeight="92.0" prefWidth="217.0">
+                     <children>
+                        <Label fx:id="lbl_main11" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="222.0" text="Animation Speed" textAlignment="CENTER" wrapText="true">
+                           <graphic>
+                              <ImageView fx:id="img_draw312" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/animation_image_buttons/animationSpeed.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="cBoxAnimationSpeed" prefHeight="34.0" prefWidth="104.0" value="--Select Algorithm--">
+                           <tooltip>
+                              <Tooltip id="tooltip_selectAlgorithm" text="Select Animation Speed" />
+                           </tooltip>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

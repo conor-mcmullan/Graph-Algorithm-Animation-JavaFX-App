@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="menu_pane" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0"
+      stylesheets="@../stylesheets/Main.css"
+      xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.MainController">
+   <children>
+      <HBox fx:id="hbox_container" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <VBox fx:id="vbox_container" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="133.0">
+               <children>
+                  <VBox fx:id="vbox_left_btns" prefHeight="400.0" prefWidth="134.0">
+                     <children>
+                        <AnchorPane fx:id="left_anc_pane" maxHeight="407.0" maxWidth="140.0" minHeight="398.0" minWidth="79.0" prefHeight="398.0" prefWidth="134.0">
+                           <children>
+                              <Button fx:id="btn_draw" layoutX="3.0" layoutY="73.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_draw" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Draw">
+                                       <graphic>
+                                          <ImageView fx:id="img_draw" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/draw.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_help" layoutX="3.0" layoutY="234.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_help" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Help">
+                                       <graphic>
+                                          <ImageView fx:id="img_help" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/help.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_examples" layoutX="3.0" layoutY="180.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_examples" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Examples">
+                                       <graphic>
+                                          <ImageView fx:id="img_examples" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/example.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_load" layoutX="3.0" layoutY="128.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_load" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Load">
+                                       <graphic>
+                                          <ImageView fx:id="img_load" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/upload.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_notes" layoutX="3.0" layoutY="17.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_notes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Notes">
+                                       <graphic>
+                                          <ImageView fx:id="img_notes" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/notes.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_exit" layoutX="3.0" layoutY="343.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false"
+                                      onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_exit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Exit">
+                                       <graphic>
+                                          <ImageView fx:id="img_exit" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/exit.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btn_settings" layoutX="3.0" layoutY="289.0" maxHeight="50.0" maxWidth="0.0" minHeight="40.0" minWidth="120.0" mnemonicParsing="false" onAction="#move_window" prefHeight="0.0" prefWidth="0.0" textAlignment="JUSTIFY">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label fx:id="lbl_settings" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0" text="Settings">
+                                       <graphic>
+                                          <ImageView fx:id="img_settings" fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/settings.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="body_pane" prefHeight="400.0" prefWidth="267.0">
+               <children>
+                  <GridPane fx:id="grid_pane_body" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="267.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="241.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="257.0" minHeight="10.0" prefHeight="244.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <AnchorPane prefHeight="201.0" prefWidth="267.0">
+                           <children>
+                              <Pane layoutY="33.0" prefHeight="177.0" prefWidth="267.0">
+                                 <children>
+                                    <ImageView fitHeight="67.0" fitWidth="197.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/qub_logo.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <TextArea editable="false" layoutX="8.0" layoutY="83.0" prefHeight="78.0" prefWidth="251.0" text="Student Name: Conor McMullan&#10;Student Number: 40154229&#10;Supervisor: Dr Peter Kilpatrick&#10;Project ID: PK01&#10;Project Name: The Animation of Graph Algorithms">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="174.0" prefWidth="267.0" GridPane.rowIndex="1">
+                           <children>
+                              <Pane prefHeight="246.0" prefWidth="267.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/graph_images/CycleinaGraph.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="43.0" fitWidth="101.0" layoutX="81.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/graph_images/DirectedGraph.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="177.0" fitWidth="237.0" layoutX="7.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/algorithm_images/shortest_path.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</Pane>
